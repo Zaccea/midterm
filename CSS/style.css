@@ -9,7 +9,7 @@ body {
 .container {
     display: grid;
     grid-template-areas:
-        "logo logo logo"
+        "logo logo twitter"
         "social navbar twitter"
         "social content twitter"
         "footer footer footer";
@@ -24,14 +24,15 @@ body {
 /* Logo */
 .logo {
     grid-area: logo;
-    background-color: #ff69b4;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
 }
 
 /* Navigation Bar */
@@ -87,6 +88,7 @@ body {
     align-items: center;
     color: black;
     font-size: 1.2em;
+    height: 100%;
 }
 
 /* Footer */
