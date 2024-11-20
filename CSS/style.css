@@ -21,6 +21,28 @@ body {
     box-sizing: border-box;
 }
 
+/* Global Scrollbar Styles */
+* {
+    scrollbar-width: thin; /* Firefox: Thin scrollbar */
+    scrollbar-color: rgba(255, 255, 255, 0.6) rgba(0, 0, 0, 0.2); /* Thumb and Track colors */
+}
+
+*::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.6); /* Thumb color */
+    border-radius: 6px; /* Rounded edges */
+    border: 3px solid transparent; /* Adds padding to the thumb */
+    background-clip: padding-box; /* Ensures the border works with padding */
+}
+
+*::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.2); /* Track color */
+    border-radius: 6px; /* Rounded edges */
+}
+
 /* Logo */
 .logo {
     grid-area: logo;
@@ -93,19 +115,17 @@ body {
     grid-area: content;
     background-color: #ff69b4;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     color: white;
     font-size: 1.5em;
     font-weight: bold;
     width: 100%;
     align-self: stretch;
-    padding: 10px;
+    padding: 20px;
     overflow-y: auto;
     max-height: 100%;
+    box-sizing: border-box;
 }
+
 
 
 /* Twitter Feed */
