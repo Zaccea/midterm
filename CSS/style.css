@@ -126,19 +126,15 @@ body {
     box-sizing: border-box;
 }
 
-
-
 /* Twitter Feed */
 .twitter-feed {
     grid-area: twitter;
     background-color: #00bfff;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 1.2em;
-    height: 100%;
+    padding: 10px; 
+    height: 100%; 
+    overflow-y: scroll; 
+    box-sizing: border-box; 
 }
 
 /* Footer */
