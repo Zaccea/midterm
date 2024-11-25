@@ -45,7 +45,6 @@ body {
 
 /* Logo */
 .logo {
-<<<<<<< HEAD
   grid-area: logo;
   background-color: #ff69b4;
   display: flex;
@@ -60,20 +59,6 @@ body {
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
-=======
-    grid-area: logo;
-    background-color: #ff69b4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.logo img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
->>>>>>> parent of 71bd826 (Replace placeholder Logo with Demo Reel)
 }
 
 /* Navigation Bar */
