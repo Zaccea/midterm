@@ -23,24 +23,24 @@ body {
 
 /* Global Scrollbar Styles */
 * {
-    scrollbar-width: thin; /* Firefox: Thin scrollbar */
-    scrollbar-color: rgba(255, 255, 255, 0.6) rgba(0, 0, 0, 0.2); /* Thumb and Track colors */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.6) rgba(0, 0, 0, 0.2);
 }
 
 *::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 12px;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.6); /* Thumb color */
-    border-radius: 6px; /* Rounded edges */
-    border: 3px solid transparent; /* Adds padding to the thumb */
-    background-clip: padding-box; /* Ensures the border works with padding */
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
 }
 
 *::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.2); /* Track color */
-    border-radius: 6px; /* Rounded edges */
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
 }
 
 /* Logo */
@@ -135,10 +135,9 @@ body {
     grid-area: twitter;
     background-color: #00bfff;
     border-radius: 10px;
-    padding: 10px; 
-    height: 100%; 
-    overflow-y: scroll; 
-    box-sizing: border-box; 
+    height: 100%;
+    overflow-y: scroll;
+    box-sizing: border-box;
 }
 
 /* Footer */
