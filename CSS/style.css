@@ -51,13 +51,11 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    overflow: hidden;
 }
 
-.logo-video {
-    width: 100%;
+.logo img {
+    max-width: 100%;
     height: auto;
-    object-fit: cover;
     border-radius: 10px;
 }
 
