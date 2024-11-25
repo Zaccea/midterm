@@ -8,11 +8,12 @@ body {
 
 .container {
     display: grid;
-    grid-template-areas: "logo logo twitter"
-    "navbar navbar twitter"
-    "social content twitter"
-    "footer footer footer";
-    grid-template-columns: 0.25fr 1fr 0.25fr;
+    grid-template-areas:
+        "logo logo twitter"
+        "navbar navbar twitter"
+        "social content twitter"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: auto auto 1fr auto;
     gap: 10px;
     height: 100vh;
@@ -22,24 +23,24 @@ body {
 
 /* Global Scrollbar Styles */
 * {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.6) rgba(0, 0, 0, 0.2);
+    scrollbar-width: thin; /* Firefox: Thin scrollbar */
+    scrollbar-color: rgba(255, 255, 255, 0.6) rgba(0, 0, 0, 0.2); /* Thumb and Track colors */
 }
 
 *::-webkit-scrollbar {
-    width: 12px;
+    width: 12px; /* Width of the scrollbar */
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 6px;
-    border: 3px solid transparent;
-    background-clip: padding-box;
+    background-color: rgba(255, 255, 255, 0.6); /* Thumb color */
+    border-radius: 6px; /* Rounded edges */
+    border: 3px solid transparent; /* Adds padding to the thumb */
+    background-clip: padding-box; /* Ensures the border works with padding */
 }
 
 *::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.2); /* Track color */
+    border-radius: 6px; /* Rounded edges */
 }
 
 /* Logo */
@@ -55,7 +56,7 @@ body {
 
 .logo-video {
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -103,22 +104,12 @@ body {
     align-items: center;
     background-color: #fff;
     border-radius: 5px;
+    font-size: 0.9em;
     color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    font-weight: bold;
+    padding: 5px;
 }
 
 /* Content Panel */
@@ -127,12 +118,14 @@ body {
     background-color: #ff69b4;
     border-radius: 10px;
     color: white;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: bold;
-    width: auto;
+    width: 100%;
+    align-self: stretch;
     padding: 20px;
     overflow-y: auto;
     max-height: 100%;
+    box-sizing: border-box;
 }
 
 /* Twitter Feed */
@@ -140,9 +133,10 @@ body {
     grid-area: twitter;
     background-color: #00bfff;
     border-radius: 10px;
-    height: 100%;
-    overflow-y: scroll;
-    box-sizing: border-box;
+    padding: 10px; 
+    height: 100%; 
+    overflow-y: scroll; 
+    box-sizing: border-box; 
 }
 
 /* Footer */
